@@ -1,0 +1,1 @@
+// alert('Pagina orincipal de JS')
