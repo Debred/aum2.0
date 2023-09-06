@@ -8,24 +8,22 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="css/main.css">
+    <?php wp_head(); ?>
 </head>
 
 <body>
     <header>
         <div class="cont-nav">
-            <a href="">
-                <img src="./assets/logo.png" alt="AUM" title="AUM">
+            <a href="/" id="logo">
+                <img src="<?php echo esc_url(wp_get_attachment_url(get_theme_mod('custom_logo'))); ?>" alt="">
             </a>
-            <nav>
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Sedes</a></li>
-                    <li><a href="">Maestros</a></li>
-                    <li><a href="">Eventos</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contacto</a></li>
-                </ul>
-            </nav>
+            <?php
+            $args = array(
+                'theme_location' => 'main_menu',
+                'container' => 'nav',
+                'container_class' => 'main_menu',
+            );
+            wp_nav_menu($args);
+            ?>
         </div>
     </header>

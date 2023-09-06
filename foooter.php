@@ -1,5 +1,4 @@
- <!-- Scripts JS -->
- <script src="./js/main.js"></script>
- </body>
+<?php wp_footer(); ?>
+</body>
 
- </html>
+</html>
