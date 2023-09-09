@@ -221,11 +221,13 @@ function aum_theme_scripts()
     wp_scripts()->add_data('jquery-migrate', 'group', 1);
 
     // Global stylesheet.
+    wp_enqueue_style('swipercss', get_template_directory_uri() . "/build/css/swiper.css", array(), '10.2.0');
     wp_enqueue_style('aum-theme-fonts', get_template_directory_uri() . "/assets/fonts/fonts.css", array(), '1.0');
-    wp_enqueue_style('aum-theme-main-stylesheet', get_template_directory_uri() . "/build/css/main-style.css", array('aum-theme-fonts'), '1.0');
+    wp_enqueue_style('aum-theme-main-stylesheet', get_template_directory_uri() . "/build/css/main-style.css", array('aum-theme-fonts', 'swipercss'), '1.0', 'all');
 
     // Main JS scripts.
-    wp_enqueue_script('aum-theme-main-scripts', get_template_directory_uri() . '/build/js/scripts.js', array(), '1.0', true);
+    wp_enqueue_script('swiperjs', get_template_directory_uri() . '/build/js/imports/swiper.js', array(), '10.2.0', true);
+    wp_enqueue_script('aum-theme-main-scripts', get_template_directory_uri() . '/build/js/scripts.js', array('swiperjs'), '1.0', true);
 
     // Load specific template stylesheet
     if(is_front_page()){

@@ -6,8 +6,6 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>AUM</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel="stylesheet" href="css/main.css">
     <?php wp_head(); ?>
 </head>
 
@@ -15,7 +13,7 @@
     <header>
         <div class="cont-nav">
             <a href="/" id="logo">
-                <img src="<?php echo esc_url(wp_get_attachment_url(get_theme_mod('custom_logo'))); ?>" alt="">
+                <img src="<?php echo esc_url(wp_get_attachment_url(get_theme_mod('custom_logo'))) ?>" alt="">
             </a>
             <?php
             $args = array(

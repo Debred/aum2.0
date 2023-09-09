@@ -18,6 +18,11 @@
   --hdpi: 2560px;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 html {
   min-height: 100vh;
   display: flex;
@@ -153,7 +158,7 @@ img[data-src] {
   align-items: center;
   background-color: #2065b2;
   color: #fff;
-  padding: 20px 40px;
+  padding: 10px 22px;
 
   img {
     display: inline-block;
