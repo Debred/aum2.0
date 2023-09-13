@@ -5,15 +5,10 @@ if (!defined('ABSPATH')) {
 get_header();
 ?>
 
-<div class="cover-show">
-    <h1>
-        A.U.M
-        Acción por la Unidad Mundial
-    </h1>
-</div>
+
+<?php get_template_part('./template-parts/cover')  ?>
 
 
 
 
-
-<?php get_footer(); ?>
+<?php get_footer() ?>
