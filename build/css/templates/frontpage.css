@@ -1,2 +1,2 @@
-.cover-show{background:url(../../../build/images/cover-inicio.webp) no-repeat top;background-size:cover;height:100%;padding:300px;width:100%}
+.cover{background:url(../../../build/images/cover-inicio.webp) no-repeat top;background-size:cover;padding:300px;position:relative}.cover,.cover:after{height:100%;width:100%}.cover:after{background-color:rgba(0,0,0,.4);content:"";left:0;position:absolute;top:0}.cover__title{color:#fff;position:relative;text-align:center;z-index:1}@media (min-width:400px){.cover{padding:100px 0}}
 /*# sourceMappingURL=frontpage.css.map */

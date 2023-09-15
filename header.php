@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <div class="cont-nav">
             <a href="/" id="logo">
                 <img src="<?php echo esc_url(wp_get_attachment_url(get_theme_mod('custom_logo'))) ?>" alt="">
