@@ -152,6 +152,10 @@ img[data-src] {
   opacity: 0;
 }
 
+.txt-center {
+  text-align: center;
+}
+
 //Header
 .cont-nav {
   display: flex;
@@ -212,7 +216,7 @@ nav {
       margin-bottom: 2.5rem;
     }
     .btn-primary {
-      all:unset;
+      all: unset;
       background-color: #fe9c2d;
       color: #fff;
       border-radius: 5px;
@@ -231,11 +235,16 @@ nav {
   }
 }
 
-
-.cont-icons{
+.cont-icons {
   display: grid;
   justify-content: center;
   background-color: rgba(var(--tertiary-color));
+  &__boxes {
+    margin: 35px 0;
+    p{
+      width: 20rem;
+    }
+  }
 }
 
 /*Header MEDIA QUERYS*/
