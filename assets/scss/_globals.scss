@@ -192,48 +192,6 @@ nav {
   }
 }
 
-/*HOME PAGE ABOUT*/
-.cont-about {
-  padding: 2rem 1.8rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  &__text {
-    p {
-      margin-bottom: 1.6rem;
-      color: #fe9c2d;
-      font-family: var(--playfair);
-      font-weight: bold;
-      line-height: 1.6rem;
-      font-size: 1.6rem;
-    }
-    p ~ p {
-      color: #46464f;
-      font-family: var(--lato);
-      font-weight: inherit;
-      display: inline-block;
-      line-height: 16px;
-      font-size: 12px;
-      margin-bottom: 2.5rem;
-    }
-    .btn-primary {
-      all: unset;
-      background-color: #fe9c2d;
-      color: #fff;
-      border-radius: 5px;
-      padding: 5px 8px;
-      display: inline-block;
-    }
-  }
-  &__img {
-    width: 100%;
-    height: 100%;
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
 
 .cont-icons {
   display: grid;
