@@ -1,3 +1,4 @@
+@import "./breakpoints";
 :root {
   //Color Scheme
   --primary-color: 32, 101, 178;
@@ -10,12 +11,6 @@
   //Fonts
   --lato: "Lato", sans-serif;
   --playfair: "Playfair Display", serif;
-
-  //Screen Breakpoints
-  --tablet: 768px;
-  --ldpi: 1024px;
-  --mdpi: 1440px;
-  --hdpi: 2560px;
 }
 
 * {
@@ -62,13 +57,17 @@ h5 {
 
 h1,
 .h1 {
-  font-size: 2.8rem;
+  font-size: 4.2rem;
   font-weight: 700;
-  @media (min-width: --tablet) {
-    font-size: 3.2rem;
+  line-height: 5.2rem;
+  @media (min-width: $tablet) {
+    font-size: 4.6rem;
+    line-height: 5.6rem;
   }
-  @media (min-width: --ldpi) {
-    font-size: 4rem;
+
+  @media (min-width: $ldpi) {
+    font-size: 5rem;
+    line-height: 6rem;
   }
 }
 
@@ -76,10 +75,10 @@ h2,
 .h2 {
   font-size: 2.2rem;
   font-weight: 700;
-  @media (min-width: --tablet) {
+  @media (min-width: $tablet) {
     font-size: 2.8rem;
   }
-  @media (min-width: --ldpi) {
+  @media (min-width: $ldpi) {
     font-size: 3.2rem;
   }
 }
@@ -88,10 +87,10 @@ h3,
 .h3 {
   font-size: 1.8rem;
   font-weight: 700;
-  @media (min-width: --tablet) {
+  @media (min-width: $tablet) {
     font-size: 2.2rem;
   }
-  @media (min-width: --ldpi) {
+  @media (min-width: $ldpi) {
     font-size: 2.8rem;
   }
 }
@@ -100,10 +99,10 @@ h4,
 .h4 {
   font-size: 1.6rem;
   font-weight: 700;
-  @media (min-width: --tablet) {
+  @media (min-width: $tablet) {
     font-size: 1.8rem;
   }
-  @media (min-width: --ldpi) {
+  @media (min-width: $ldpi) {
     font-size: 2.2rem;
   }
 }
@@ -156,6 +155,60 @@ img[data-src] {
   text-align: center;
 }
 
+//Utilidades
+.container {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.formatted-text {
+  font-size: 1.6rem;
+  font-family: var(--lato);
+  color: rgba(var(--text-color), 1);
+  line-height: 2.4rem;
+}
+
+.section-title {
+  font-size: 2.6rem;
+  font-family: var(--playfair);
+  font-weight: bold;
+  color: rgb(var(--primary-complement));
+  letter-spacing: 2px;
+  line-height: 3rem;
+  text-transform: capitalize;
+
+  @media (min-width: $tablet) {
+    font-size: 3rem;
+    line-height: 3.4rem;
+  }
+
+  @media (min-width: $ldpi) {
+    font-size: 4rem;
+    line-height: 4.4rem;
+  }
+}
+
+.btn-primary {
+  min-width: fit-content;
+  padding: 5px 8px;
+  background-color: rgba(var(--primary-complement), 1);
+  display: inline-block;
+  border-radius: 5px;
+  font-family: var(--playfair);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background-color: rgb(var(--secondary-complement), 1);
+    color: #fff;
+  }
+}
+
 //Header
 .cont-nav {
   display: flex;
@@ -192,14 +245,13 @@ nav {
   }
 }
 
-
 .cont-icons {
   display: grid;
   justify-content: center;
   background-color: rgba(var(--tertiary-color));
   &__boxes {
     margin: 35px 0;
-    p{
+    p {
       width: 20rem;
     }
   }

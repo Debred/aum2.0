@@ -1,7 +1,7 @@
-<section class="cont-about">
+<section class="cont-about container">
     <div class="cont-about__text">
-        <p>Lorem ipsum dolor sit amet</p>
-        <p>
+        <p class="section-title">Lorem ipsum dolor sit amet</p>
+        <p class="formatted-text">
             Donec condimentum eros placerat, tincidunt orci nec, dignissim sem.
             Aliquam ultrices sollicitudin ullamcorper. Donec tincidunt quis velit ac accumsan.
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
