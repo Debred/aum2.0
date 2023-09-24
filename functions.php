@@ -141,7 +141,8 @@ if (!function_exists('aum_theme_setup')) {
         register_nav_menus(
             array(
                 'main_menu' => esc_html__('Main menu', 'aum_theme'),
-                //'footer'  => __( 'Footer menu', 'aum_theme' ),
+                'footer_menu_first'  => __( 'Footer menu first', 'aum_theme' ),
+                'footer_menu_second'  => __( 'Footer menu second', 'aum_theme' ),
             )
         );
     }
