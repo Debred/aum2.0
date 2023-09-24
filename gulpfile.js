@@ -43,14 +43,14 @@ function images() {
   return src(paths.images)
     .pipe(cache(imagemin({ optimizationLevel: 3 })))
     .pipe(dest("build/images"))
-    .pipe(notify({ message: "Image Complete" }));
+    // .pipe(notify({ message: "Image Complete" }));
 }
 
 function versionWebp() {
   return src(paths.images)
     .pipe(webp())
     .pipe(dest("build/images"))
-    .pipe(notify({ message: "Image Complete" }));
+    // .pipe(notify({ message: "Image Complete" }));
 }
 
 function watchArchivos() {

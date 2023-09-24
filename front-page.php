@@ -9,6 +9,7 @@ get_header();
 <?php get_template_part('./template-parts/cover')  ?>
 <?php get_template_part('./template-parts/about')  ?>
 <?php get_template_part('./template-parts/icons')  ?>
+<?php get_template_part('./template-parts/slide')  ?>
 
 
 <?php get_footer() ?>

@@ -1,0 +1,11 @@
+.cont-icons {
+  display: grid;
+  justify-content: center;
+  background-color: rgba(var(--tertiary-color));
+  &__boxes {
+    margin: 35px 0;
+    p {
+      width: 20rem;
+    }
+  }
+}
