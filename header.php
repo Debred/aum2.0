@@ -15,13 +15,20 @@
             <a href="/" id="logo">
                 <img src="<?php echo esc_url(wp_get_attachment_url(get_theme_mod('custom_logo'))) ?>" alt="">
             </a>
+
             <?php
             $args = array(
                 'theme_location' => 'main_menu',
                 'container' => 'nav',
-                'container_class' => 'main_menu',
+                'container_class' => 'main-menu',
             );
             wp_nav_menu($args);
             ?>
+
+            <div id="menu-mobile">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </div>
     </header>
