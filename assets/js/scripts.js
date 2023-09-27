@@ -34,6 +34,21 @@ function toggleSubMenu(e) {
   }
 }
 
+//Swiper
+//Events Banner
+var swiper = new Swiper(".events__wrapper.swiper", {
+  slidesPerView: 1,
+  autoHeight: true,
+  grabCursor: true,
+  loop: true,
+  /* autoplay: {
+    delay: 5000,
+  }, */
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
 var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
