@@ -6,6 +6,10 @@
   top: 0;
   z-index: 999;
 
+  @media (min-width: $mdpi) {
+    box-shadow: 0px 12px 15px -6px rgba(0, 0, 0, 0.5);
+  }
+
   .cont-nav {
     width: 90%;
     margin: 0 auto;
@@ -35,6 +39,10 @@
       align-items: center;
       cursor: pointer;
 
+      @media (min-width: $mdpi) {
+        display: none;
+      }
+
       &.active {
         .line:first-child {
           position: absolute;
@@ -43,7 +51,7 @@
           transform: translateY(-50%);
           transform: rotate(45deg);
         }
-        .line:nth-child(2n){
+        .line:nth-child(2n) {
           opacity: 0;
         }
         .line:last-child {
@@ -59,26 +67,37 @@
         width: 100%;
         height: 2px;
         background-color: rgba(var(--tertiary-color), 1);
-        transition: .2s ease;
+        transition: 0.2s ease;
       }
     }
 
     .main-menu {
       width: 100%;
-      max-height: 70vh;
+      max-height: 0;
       overflow-y: scroll;
-      padding: 2rem 1.5rem;
+      padding: 0;
       position: absolute;
       top: 100%;
       left: 0;
-      display: none;
+      display: block;
       background-color: rgba(var(--primary-color), 1);
       border-top: 1px solid rgba(var(--tertiary-color));
-      transition: display 0.2s ease;
-      box-shadow: 0px 12px 15px -6px rgba(0,0,0,0.5);
+      transition: max-height 30ms ease;
+      box-shadow: 0px 12px 15px -6px rgba(0, 0, 0, 0.5);
+
+      @media (min-width: $mdpi) {
+        width: 60%;
+        max-height: fit-content;
+        overflow-y: visible;
+        position: static;
+        border-top: 0;
+        box-shadow: none;
+      }
 
       &.active {
-        display: inline-block;
+        max-height: 70vh;
+        height: fit-content;
+        padding: 2rem 1.5rem;
       }
 
       .menu {
@@ -86,16 +105,27 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+
+        @media (min-width: $mdpi) {
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 3rem;
+        }
+
         .menu-item {
           width: 100%;
           display: flex;
+
+          @media (min-width: $mdpi) {
+            width: fit-content;
+          }
 
           &:hover,
           &.active,
           &.current-menu-ancestor,
           &.current-menu-item {
-            display: block;
-            a,
+            & > a,
             &::after {
               color: rgba(var(--primary-complement));
             }
@@ -105,6 +135,34 @@
             position: relative;
             display: flex;
             flex-direction: column;
+            @media (min-width: $mdpi) {
+              flex-direction: row;
+              flex-wrap: nowrap;
+              align-items: center;
+
+              &:hover {
+                & > .sub-menu {
+                  padding: 0;
+                  position: absolute;
+                  top: 100%;
+                  left: 0;
+                  z-index: 1000;
+                  display: flex;
+
+                  .menu-item {
+                    width: max-content;
+                    background-color: rgba(var(--secondary-complement), 1);
+                    transition: 0.2s ease-in-out;
+                    &:hover {
+                      background-color: rgba(var(--primary-complement), 1);
+                      a {
+                        color: #fff;
+                      }
+                    }
+                  }
+                }
+              }
+            }
 
             &::after {
               content: "\25BE";
@@ -117,13 +175,17 @@
               line-height: 1.8rem;
               transition: 0.2s ease-in-out;
               cursor: pointer;
+
+              @media (min-width: $mdpi) {
+                position: static;
+              }
             }
 
             &.active {
               & > .sub-menu {
                 display: flex;
               }
-              &:hover::after {
+              &::after {
                 transform: rotate(180deg);
               }
             }
@@ -137,6 +199,7 @@
 
           a {
             width: fit-content;
+            margin: 0;
             padding: 0.5rem 1rem;
             font-family: var(--playfair);
             font-size: 1.8rem;
