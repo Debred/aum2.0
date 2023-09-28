@@ -29,6 +29,7 @@
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
-
-
+  <div class="flx-center">
+    <a href="#" class="btn-primary txt-center">Saber Más</a>
+  </div>
 </div>
