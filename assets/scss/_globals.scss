@@ -1,5 +1,3 @@
-@import "./breakpoints";
-
 :root {
   //Color Scheme
   --primary-color: 32, 101, 178;
@@ -199,7 +197,7 @@ img[data-src] {
 
 .btn-primary {
   min-width: fit-content;
-  padding: 5px 8px;
+  padding: 8px 20px;
   background-color: rgba(var(--primary-complement), 1);
   display: inline-block;
   border-radius: 5px;
@@ -215,6 +213,20 @@ img[data-src] {
   &:hover {
     background-color: rgb(var(--secondary-complement), 1);
     color: #fff;
+  }
+
+  &.arrow {
+    padding: 2px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    &::after {
+      content: "\2192";
+      margin-left: 1rem;
+      display: inline-block;
+      font-size: 2.5rem;
+    }
   }
 }
 

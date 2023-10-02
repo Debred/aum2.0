@@ -36,16 +36,55 @@ function toggleSubMenu(e) {
 
 //Swiper
 //Events Banner
-var swiper = new Swiper(".events__wrapper.swiper", {
+var swiperEvents = new Swiper(".events__wrapper.swiper", {
   slidesPerView: 1,
   autoHeight: true,
-  grabCursor: true,
+  spaceBetween: 30,
   loop: true,
-  /* autoplay: {
+  createElements: true,
+  autoplay: {
     delay: 5000,
-  }, */
+  },
   pagination: {
     el: ".swiper-pagination",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 4,
+      rewind: true,
+      keyboard: true,
+      allowSlideNext: true,
+      allowSlidePrev: true,
+      simulateTouch: false,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    },
+  },
+});
+
+//Articles Banner
+var swiperArticles = new Swiper(".articles__wrapper.swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoHeight: true,
+  loop: true,
+  createElements: true,
+  autoplay: {
+    delay: 5000,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      enabled: false,
+      slidesPerView: 4,
+    },
   },
 });
 

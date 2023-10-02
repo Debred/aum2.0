@@ -23,8 +23,30 @@
                     <p class="event__day">Lunes 3:00pm</p>
                     <a href="" class="event__link">Ver Evento</a>
                 </div>
+                <div class="event swiper-slide">
+                    <p class="event__date">Sep 04</p>
+                    <p class="event__name">Lorem Ipsum Dolor</p>
+                    <p class="event__day">Lunes 3:00pm</p>
+                    <a href="" class="event__link">Ver Evento</a>
+                </div>
+                <div class="event swiper-slide">
+                    <p class="event__date">Sep 04</p>
+                    <p class="event__name">Lorem Ipsum Dolor</p>
+                    <p class="event__day">Lunes 3:00pm</p>
+                    <a href="" class="event__link">Ver Evento</a>
+                </div>
+                <div class="event swiper-slide">
+                    <p class="event__date">Sep 04</p>
+                    <p class="event__name">Lorem Ipsum Dolor</p>
+                    <p class="event__day">Lunes 3:00pm</p>
+                    <a href="" class="event__link">Ver Evento</a>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
         </div>
 
         <div class="cta-banner">
