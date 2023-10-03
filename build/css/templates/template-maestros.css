@@ -1,2 +1,2 @@
-
+.cover{align-items:center;background:url(../../../build/images/cover-inicio.webp) no-repeat top;background-size:cover;display:flex;height:300px;justify-content:center;position:relative;width:100%}.cover:after{background-color:rgba(0,0,0,.4);content:"";height:100%;left:0;position:absolute;top:0;width:100%}.cover__title{color:#fff;position:relative;text-align:center;z-index:1}@media (min-width:768px){.cover{height:400px}}@media (min-width:1024px){.cover{height:600px}}@media (min-width:400px){.cover{padding:100px 0}}
 /*# sourceMappingURL=template-maestros.css.map */

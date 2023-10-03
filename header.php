@@ -9,7 +9,8 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
     <header class="site-header">
         <div class="cont-nav">
             <a href="/" id="logo">
@@ -32,4 +33,3 @@
             </div>
         </div>
     </header>
-    

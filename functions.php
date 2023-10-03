@@ -7,7 +7,7 @@ if (!function_exists('aum_theme_setup')) {
         add_theme_support('title-tag');
 
         //Enable featured images
-        add_theme_support('post-thumbnails', array('post'));
+        add_theme_support('post-thumbnails', array('post', 'page'));
 
         //Add custom sized images
         add_image_size('square', 350, 350, true);
@@ -141,8 +141,8 @@ if (!function_exists('aum_theme_setup')) {
         register_nav_menus(
             array(
                 'main_menu' => esc_html__('Main menu', 'aum_theme'),
-                'footer_menu_first'  => __( 'Footer menu first', 'aum_theme' ),
-                'footer_menu_second'  => __( 'Footer menu second', 'aum_theme' ),
+                'footer_menu_first'  => __('Footer menu first', 'aum_theme'),
+                'footer_menu_second'  => __('Footer menu second', 'aum_theme'),
             )
         );
     }
@@ -231,21 +231,21 @@ function aum_theme_scripts()
     wp_enqueue_script('aum-theme-main-scripts', get_template_directory_uri() . '/build/js/scripts.js', array('swiperjs'), '1.0', true);
 
     // Load specific template stylesheet
-    if(is_front_page()){
+    if (is_front_page()) {
         wp_enqueue_style('aum-theme-front-page', get_template_directory_uri() . "/build/css/templates/frontpage.css", array(), '1.0');
     }
 
     if (is_page()) {
-        /* if (!is_page_template('page-templates/template-homepage.php')) wp_enqueue_style('aum-theme-template-default', get_template_directory_uri() . '/assets/scss/page-templates/template-default.css', array(), '1.1');
+        if (!is_front_page()) wp_enqueue_style('aum-theme-template-default', get_template_directory_uri() . '/build/css/templates/template-default.css', array(), '1.1');
 
         switch (get_page_template_slug()) {
-            case 'page-templates/template-homepage.php':
-                wp_enqueue_style('aum-theme-template-homepage', get_template_directory_uri() . '/assets/scss/page-templates/template-homepage.css');
+            case 'page-templates/template-maestros.php':
+                wp_enqueue_style('aum-theme-template-maestros', get_template_directory_uri() . '/build/css/templates/template-maestros.css');
                 break;
-        } */
+        }
     }
 
-   /*  if (is_home() || is_archive() || is_single()) {
+    /*  if (is_home() || is_archive() || is_single()) {
         wp_enqueue_style('aum-theme-template-default', get_template_directory_uri() . '/assets/scss/page-templates/template-default.css');
         wp_enqueue_style('aum-theme-page-blog-posts-stylesheet', get_template_directory_uri() . '/assets/scss/page-templates/template-blog-posts.css');
 
