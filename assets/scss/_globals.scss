@@ -150,12 +150,7 @@ p {
 img {
   max-width: 100%;
   height: auto;
-  opacity: 1;
   transition: opacity 0.3s;
-}
-
-img[data-src] {
-  opacity: 0;
 }
 
 .txt-center {

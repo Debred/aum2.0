@@ -1,6 +1,5 @@
 <div class="cont-about-aum">
     <h2 class="txt-center">Más sobre a.u.m.</h2>
-
     <div class="container">
         <div class="cont-about-aum__cont__grid">
             <div class="cont__cards">

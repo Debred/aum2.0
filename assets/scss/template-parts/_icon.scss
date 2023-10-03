@@ -1,24 +1,32 @@
 .cont-icons {
-  display: grid;
-  justify-content: center;
+
   background-color: rgba(var(--tertiary-color));
+
   &__boxes {
     margin: 35px 0;
+
     p {
       width: 20rem;
     }
   }
+
+  .icons-wrapper {
+    display: grid;
+    justify-content: center;
+  }
 }
 
-@media  (min-width: $tablet) {
+@media (min-width: $tablet) {
   .cont-icons {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    &__boxes{
+
+    &__boxes {
       margin: 0;
-      p{
+
+      p {
         line-height: 2.3rem;
         font-size: 14px;
       }
@@ -27,23 +35,26 @@
 }
 
 @media (min-width: $ldpi) {
-  .cont-icons{
+  .cont-icons {
     grid-template-columns: 200px 200px 200px 200px;
   }
 }
 
 @media (min-width: $mdpi) {
-  .cont-icons{
+  .cont-icons {
     grid-template-columns: 300px 300px 300px 300px;
-    &__boxes{
+
+    &__boxes {
       padding: 0 50px;
     }
   }
 }
+
 @media (min-width: $hdpi) {
-  .cont-icons{
+  .cont-icons {
     grid-template-columns: 400px 400px 400px 400px;
-    &__boxes{
+
+    &__boxes {
       padding: 0 100px;
     }
   }

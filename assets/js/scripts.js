@@ -34,6 +34,53 @@ function toggleSubMenu(e) {
   }
 }
 
+
+//Swiper Maestros
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoHeight: true,
+  loop: true,
+  createElements: true,
+  autoplay: {
+    delay: 5000,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      enabled: false,
+      slidesPerView: 4,
+    },
+  },
+});
+
+//Articles Banner
+var swiperArticles = new Swiper(".articles__wrapper.swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoHeight: true,
+  loop: true,
+  createElements: true,
+  autoplay: {
+    delay: 5000,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      enabled: false,
+      slidesPerView: 4,
+    },
+  },
+});
+
 //Swiper
 //Events Banner
 var swiperEvents = new Swiper(".events__wrapper.swiper", {
@@ -64,33 +111,5 @@ var swiperEvents = new Swiper(".events__wrapper.swiper", {
         prevEl: ".swiper-button-prev",
       },
     },
-  },
-});
-
-//Articles Banner
-var swiperArticles = new Swiper(".articles__wrapper.swiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  autoHeight: true,
-  loop: true,
-  createElements: true,
-  autoplay: {
-    delay: 5000,
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
-    1440: {
-      enabled: false,
-      slidesPerView: 4,
-    },
-  },
-});
-
-var swiper = new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
 });

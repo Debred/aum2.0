@@ -89,3 +89,13 @@
         }
     }
 }
+@media (min-width: $mdpi) {
+    .cont-about-aum__cont__grid {
+            .cont__cards {
+                padding: 2rem;
+                width: 90%;
+                height: 400px;
+                margin: 0 auto;
+            }
+        }
+}
