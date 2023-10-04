@@ -1,5 +1,5 @@
 <div class="cont-slider">
-  <h3 class="txt-center">Maestros Fundadores</h3>
+  <h2 class="txt-center section-title">Maestros Fundadores</h2>
 
   <!-- Swiper -->
 
@@ -45,9 +45,10 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
+    <div class="flx-center">
+      <a href="#" class="btn-primary txt-center">Saber Más</a>
+    </div>
   </div>
 
-  <div class="flx-center">
-    <a href="#" class="btn-primary txt-center">Saber Más</a>
-  </div>
+
 </div>
