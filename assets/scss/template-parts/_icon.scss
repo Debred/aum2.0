@@ -1,5 +1,15 @@
 .cont-icons {
 
+  .cont-icon {
+    width: 100px;
+    height: 100px;
+
+    * {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
   background-color: rgba(var(--tertiary-color));
 
   &__boxes {
@@ -13,15 +23,20 @@
   .icons-wrapper {
     display: grid;
     justify-content: center;
+    gap: 50px;
   }
 }
 
 @media (min-width: $tablet) {
   .cont-icons {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
+    .icons-wrapper {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+
+
+    }
 
     &__boxes {
       margin: 0;
@@ -36,13 +51,17 @@
 
 @media (min-width: $ldpi) {
   .cont-icons {
-    grid-template-columns: 200px 200px 200px 200px;
+    .icons-wrapper {
+      grid-template-columns: 200px 200px 200px 200px;
+    }
   }
 }
 
 @media (min-width: $mdpi) {
   .cont-icons {
-    grid-template-columns: 300px 300px 300px 300px;
+    .icons-wrapper {
+      grid-template-columns: 300px 300px 300px 300px;
+    }
 
     &__boxes {
       padding: 0 50px;
@@ -52,7 +71,10 @@
 
 @media (min-width: $hdpi) {
   .cont-icons {
-    grid-template-columns: 400px 400px 400px 400px;
+    .icons-wrapper {
+      grid-template-columns: 400px 400px 400px 400px;
+
+    }
 
     &__boxes {
       padding: 0 100px;

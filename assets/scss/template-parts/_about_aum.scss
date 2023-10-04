@@ -8,7 +8,7 @@
 
     &__cont__grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
 
         .cont__cards {
             padding: 1rem;
@@ -69,6 +69,13 @@
 }
 
 @media (min-width: $tablet) {
+    .cont-about-aum {
+        &__cont__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
     .cont-about-aum__cont__grid {
         .cont__cards {
             padding: 2rem;
@@ -89,13 +96,14 @@
         }
     }
 }
+
 @media (min-width: $mdpi) {
     .cont-about-aum__cont__grid {
-            .cont__cards {
-                padding: 2rem;
-                width: 90%;
-                height: 400px;
-                margin: 0 auto;
-            }
+        .cont__cards {
+            padding: 2rem;
+            width: 90%;
+            height: 400px;
+            margin: 0 auto;
         }
+    }
 }
