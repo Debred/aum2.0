@@ -23,6 +23,17 @@ get_header();
     <h3 class="section-title titleyellow">
         Sub-heading
     </h3>
+    <p class="formatted-text">
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+    </p>
+    <h3 class="section-title titleyellow">
+        Another Heading
+    </h3>
+    <p class="formatted-text">
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+        Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+    </p>
 </div>
 
 <?php get_footer() ?>

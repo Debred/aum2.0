@@ -54,8 +54,16 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
     },
     1440: {
-      enabled: false,
-      slidesPerView: 5,
+      slidesPerView: 4,
+      rewind: true,
+      keyboard: true,
+      allowSlideNext: true,
+      allowSlidePrev: true,
+      simulateTouch: false,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     },
   },
 });
