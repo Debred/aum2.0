@@ -1,2 +1,25 @@
 @import "../breakpoints";
 @import "../template-parts/cover";
+
+.cont-page-about {
+    // display: flex;
+    // flex-direction: column;
+    .titleblue {
+        color: rgba(var(--tertiary-color));
+        font-size: 1.5rem;
+        line-height: 1.8rem; 
+        // order: 3;
+    }
+    
+    .formatted-text {
+        color: rgba(var(--text-color));
+        font-size: 1.2rem;
+        // order: 2;
+    }
+    
+    .titleyellow {
+        color: rgba(var(--primary-complement));
+        font-size: 1.2rem;
+        // order: 1;
+    }
+}
