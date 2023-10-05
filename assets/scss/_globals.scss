@@ -60,12 +60,13 @@ h1,
   font-size: 4.2rem;
   font-weight: 700;
   line-height: 5.2rem;
-
+  font-family: var(--playfair);
+  
   @media (min-width: $tablet) {
     font-size: 4.6rem;
     line-height: 5.6rem;
   }
-
+  
   @media (min-width: $ldpi) {
     font-size: 5rem;
     line-height: 6rem;
@@ -76,11 +77,13 @@ h2,
 .h2 {
   font-size: 2.2rem;
   font-weight: 700;
-
+  font-family: var(--playfair);
+  line-height: 3rem;
+  
   @media (min-width: $tablet) {
     font-size: 2.8rem;
   }
-
+  
   @media (min-width: $ldpi) {
     font-size: 3.2rem;
   }
@@ -90,6 +93,7 @@ h3,
 .h3 {
   font-size: 1.8rem;
   font-weight: 700;
+  // font-family: var(--playfair);
 
   @media (min-width: $tablet) {
     font-size: 2.2rem;

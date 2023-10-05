@@ -6,8 +6,8 @@
                 <div class="bg-img">
                     <div class="bg-screen">
                         <div class="border-blue">
-                            <h3 class="txt-center">Acerca de AUM</h3>
-                            <p class="txt-center">
+                            <h3 class="txt-center heading">Acerca de AUM</h3>
+                            <p class="txt-center tx">
                                 Conoce acerca de esta organización sin fines de lucro.
                                 Únete a las actividades que impulsan el desarrollo humano integral individual y de grupo.
                             </p>
@@ -20,8 +20,8 @@
                 <div class="bg-img">
                     <div class="bg-screen">
                         <div class="border-blue">
-                            <h3 class="txt-center">Acerca de AUM</h3>
-                            <p class="txt-center">
+                            <h3 class="txt-center heading">Acerca de AUM</h3>
+                            <p class="txt-center tx">
                                 Conoce acerca de esta organización sin fines de lucro.
                                 Únete a las actividades que impulsan el desarrollo humano integral individual y de grupo.
                             </p>
@@ -34,8 +34,8 @@
                 <div class="bg-img">
                     <div class="bg-screen">
                         <div class="border-blue">
-                            <h3 class="txt-center">Acerca de AUM</h3>
-                            <p class="txt-center">
+                            <h3 class="txt-center heading">Acerca de AUM</h3>
+                            <p class="txt-center tx">
                                 Conoce acerca de esta organización sin fines de lucro.
                                 Únete a las actividades que impulsan el desarrollo humano integral individual y de grupo.
                             </p>
@@ -48,8 +48,8 @@
                 <div class="bg-img">
                     <div class="bg-screen">
                         <div class="border-blue">
-                            <h3 class="txt-center">Acerca de AUM</h3>
-                            <p class="txt-center">
+                            <h3 class="txt-center heading">Acerca de AUM</h3>
+                            <p class="txt-center tx">
                                 Conoce acerca de esta organización sin fines de lucro.
                                 Únete a las actividades que impulsan el desarrollo humano integral individual y de grupo.
                             </p>
