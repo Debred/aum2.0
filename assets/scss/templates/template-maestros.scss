@@ -2,24 +2,40 @@
 @import "../template-parts/cover";
 
 .cont-page-about {
-    // display: flex;
-    // flex-direction: column;
-    .titleblue {
-        color: rgba(var(--primary-color));
-        font-size: 1.5rem;
-        // line-height: 1.8rem; 
-        // order: 3;
+
+    .cont-order {
+        &__first {
+            .titleblue {
+                color: rgba(var(--primary-color));
+                font-size: 1.5rem;
+            }
+
+            .formatted-text {
+                color: rgba(var(--text-color));
+                font-size: 1.2rem;
+            }
+
+            .titleyellow {
+                color: rgba(var(--primary-complement));
+                font-size: 1.2rem;
+            }
+        }
     }
-    
-    .formatted-text {
-        color: rgba(var(--text-color));
-        font-size: 1.2rem;
-        // order: 2;
-    }
-    
-    .titleyellow {
-        color: rgba(var(--primary-complement));
-        font-size: 1.2rem;
-        // order: 1;
+
+}
+
+@media (min-width: $tablet) {
+    .cont-order{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        &__first {
+            order: 0;
+        }
+        &__second {
+            order: 2;
+        }
+        &__third {
+            order: 1;
+        }
     }
 }
