@@ -1,6 +1,7 @@
 //Header
 .site-header {
   width: 100%;
+  max-width: 100vw;
   background-color: rgba(var(--primary-color), 1);
   position: sticky;
   top: 0;

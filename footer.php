@@ -1,3 +1,16 @@
+<?php if (!is_front_page()) : ?>
+    <section class="footer-banner">
+        <div class="cta-banner container">
+            <div class="banner-content">
+                <p class="cta-tagline">Eventos Próximos</p>
+                <p class="cta-title">Asiste a Nuestros Eventos</p>
+            </div>
+
+            <a href="#" class="btn-primary arrow">Entérate</a>
+        </div>
+    </section>
+<?php endif; ?>
+
 <footer id="site-footer">
     <div class="footer-inner container">
         <a href="/" class="logo">

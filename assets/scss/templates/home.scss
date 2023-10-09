@@ -1,0 +1,52 @@
+@import "../breakpoints";
+@import "../template-parts/articles";
+@import "../template-parts/cover";
+
+.blog {
+  &__wrapper {
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .articles {
+      padding: 0;
+      &__loop {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: 65% 30%;
+      justify-content: space-between;
+      align-content: center;
+      align-items: start;
+      justify-items: center;
+
+      .articles {
+        &__loop {
+          display: grid;
+          grid-template-columns: repeat(2, 46%);
+          justify-content: space-between;
+          align-content: center;
+          align-items: center;
+          justify-items: center;
+        }
+      }
+    }
+
+    @media (min-width: $mdpi) {
+      .articles {
+        &__loop {
+          grid-template-columns: repeat(3, 30%);
+        }
+      }
+    }
+  }
+}

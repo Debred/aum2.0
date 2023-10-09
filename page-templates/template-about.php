@@ -1,5 +1,5 @@
 <?php
-/*Template Name: Template de maestros*/
+/*Template Name: Template About*/
 ?>
 <?php
 if (!defined('ABSPATH')) {
@@ -38,19 +38,16 @@ get_header();
             </p>
 
         </div>
-        <div class="cont-order__second">
-            <p>Cajas de los maestros</p>
-            <p>Cajas de los maestros</p>
-            <p>Cajas de los maestros</p>
-            <p>Cajas de los maestros</p>
-            <p>Cajas de los maestros</p>
-        </div>
+
+        <?php get_template_part('template-parts/slide')  ?>
+
         <div class="cont-order__third">
             <p>caja naranja</p>
             <p>caja naranja</p>
             <p>caja naranja</p>
             <p>caja naranja</p>
         </div>
+
     </div>
 
 </div>

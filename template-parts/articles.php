@@ -4,7 +4,7 @@
         <h2 class="section-title">Últimas Entradas</h2>
 
         <div class="articles__wrapper swiper">
-            <div class="articles__carousel swiper-wrapper">
+            <div class="articles__loop swiper-wrapper">
                 <article class="article swiper-slide">
                     <div class="article__wrapper">
                         <h4 class="article__title">

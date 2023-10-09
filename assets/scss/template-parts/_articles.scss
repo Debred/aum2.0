@@ -17,7 +17,7 @@
     }
   }
 
-  &__carousel {
+  &__loop {
     .article {
       padding: 5rem 0;
       &__wrapper {
@@ -53,26 +53,36 @@
         }
       }
 
-      &__title a {
+      &__title {
         width: 80%;
         position: absolute;
-        top: -2rem;
+        top: -2.5rem;
         left: 10%;
-        font-family: var(--lato);
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 2.2rem;
-        text-align: center;
-        text-transform: uppercase;
-        color: rgba(var(--text-color), 1);
-        transition: 0.3s ease-in-out;
-        @media (min-width: $mdpi) {
+        display: block;
+        @media (min-width: $tablet) {
           top: -4.5rem;
-          font-size: 2.5rem;
-          line-height: 3rem;
+          a {
+            height: 6.8rem;
+            font-size: 2.5rem;
+            line-height: 3rem;
+          }
         }
-        &:hover {
-          color: rgba(var(--secondary-color), 1);
+        @media (min-width: $mdpi) {
+          top: -3rem;
+        }
+        a {
+          display: block;
+          font-family: var(--lato);
+          font-weight: 700;
+          font-size: 2rem;
+          line-height: 2.2rem;
+          text-align: center;
+          text-transform: uppercase;
+          color: rgba(var(--text-color), 1);
+          transition: 0.3s ease-in-out;
+          &:hover {
+            color: rgba(var(--secondary-color), 1);
+          }
         }
       }
 
@@ -92,7 +102,7 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: .3s ease;
+          transition: 0.3s ease;
         }
         &:hover {
           img {

@@ -234,13 +234,16 @@ function aum_theme_scripts()
     if (is_front_page()) {
         wp_enqueue_style('aum-theme-front-page', get_template_directory_uri() . "/build/css/templates/frontpage.css", array(), '1.0');
     }
+    if (is_home()) {
+        wp_enqueue_style('aum-theme-home', get_template_directory_uri() . "/build/css/templates/home.css", array(), '1.0');
+    }
 
     if (is_page()) {
         if (!is_front_page()) wp_enqueue_style('aum-theme-template-default', get_template_directory_uri() . '/build/css/templates/template-default.css', array(), '1.1');
 
         switch (get_page_template_slug()) {
-            case 'page-templates/template-maestros.php':
-                wp_enqueue_style('aum-theme-template-maestros', get_template_directory_uri() . '/build/css/templates/template-maestros.css');
+            case 'page-templates/template-about.php':
+                wp_enqueue_style('aum-theme-template-about', get_template_directory_uri() . '/build/css/templates/template-about.css');
                 break;
         }
     }
@@ -261,3 +264,45 @@ function aum_theme_scripts()
     } */
 }
 add_action('wp_enqueue_scripts', 'aum_theme_scripts');
+
+
+/*Tamaño de excerpt modificado*/
+function fjbs_custom_excerpt_length($length)
+{
+    return 25;
+}
+add_filter('excerpt_length', 'aum_theme_custom_excerpt_length', 999);
+
+
+/* Widget Area */
+
+function aum_theme_widget_zones()
+{
+
+    register_sidebar(array(
+        'name' => 'Blog Sidebar',
+        'id' => 'blog_sidebar',
+        'before_widget' => '<div class="widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="text-center widget__title h3">',
+        'after_title' => '</h3>'
+    ));
+
+    register_sidebar(array(
+        'name' => 'Post Widgets',
+        'id' => 'post_widgets',
+        'before_widget' => '<div class="post-widgets">',
+        'after_widget' => '</div>'
+    ));
+
+
+    register_sidebar(array(
+        'name' => 'Slideshow Widget Cover',
+        'id' => 'slideshow_widget_cover',
+        'before_widget' => '<div class="slideshow-widgets">',
+        'after_widget' => '</div>'
+    ));
+}
+
+add_action('widgets_init', 'aum_theme_widget_zones');
+
