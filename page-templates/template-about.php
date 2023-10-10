@@ -39,17 +39,19 @@ get_header();
 
         </div>
 
-        <?php get_template_part('template-parts/slide')  ?>
+        <div class="cont-order__second">
+            <?php get_template_part('template-parts/slide')  ?>
+        </div>
 
-        <div class="cont-order__third">
-            <p>caja naranja</p>
-            <p>caja naranja</p>
-            <p>caja naranja</p>
-            <p>caja naranja</p>
+            <div class="cont-order__third">
+                <p>caja naranja</p>
+                <p>caja naranja</p>
+                <p>caja naranja</p>
+                <p>caja naranja</p>
+            </div>
+
         </div>
 
     </div>
 
-</div>
-
-<?php get_footer() ?>
+    <?php get_footer() ?>

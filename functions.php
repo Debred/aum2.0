@@ -267,7 +267,7 @@ add_action('wp_enqueue_scripts', 'aum_theme_scripts');
 
 
 /*Tamaño de excerpt modificado*/
-function fjbs_custom_excerpt_length($length)
+function aum_theme_custom_excerpt_length($length)
 {
     return 25;
 }
