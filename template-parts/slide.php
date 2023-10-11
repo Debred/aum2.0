@@ -45,9 +45,11 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
-    <div class="flx-center">
-      <a href="#" class="btn-primary txt-center">Saber Más</a>
-    </div>
+    <?php if (!is_page_template('page-templates/template-about.php')) : ?>
+      <div class="flx-center">
+        <a href="#" class="btn-primary txt-center">Saber Más</a>
+      </div>
+    <?php endif ?>
   </div>
 
 
