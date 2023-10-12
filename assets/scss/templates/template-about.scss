@@ -8,16 +8,19 @@
       .titleblue {
         color: rgba(var(--primary-color));
         font-size: 1.5rem;
+        margin-bottom: 30px;
       }
 
       .formatted-text {
         color: rgba(var(--text-color));
         font-size: 1.2rem;
+        margin-bottom: 15px;
       }
 
       .titleyellow {
         color: rgba(var(--primary-complement));
         font-size: 1.2rem;
+        margin-bottom: 15px;
       }
     }
   }
@@ -27,12 +30,28 @@
   .cont-order {
     display: grid;
     grid-template-columns: 75% 25%;
+
     &__first {
       order: 0;
+
+      .titleblue {
+        font-size: 2rem !important;
+      }
+
+      .formatted-text {
+        font-size: 1.7rem !important;
+
+      }
+
+      .titleyellow {
+        font-size: 1.7rem !important;
+      }
     }
+
     &__second {
       order: 2;
     }
+
     &__third {
       order: 1;
     }
