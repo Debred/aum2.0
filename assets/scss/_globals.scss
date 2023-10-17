@@ -128,6 +128,8 @@ h4,
 a {
   font-family: var(--lato);
   color: rgb(var(--primary-complement));
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
@@ -179,6 +181,13 @@ img {
   font-family: var(--lato);
   color: rgba(var(--text-color), 1);
   line-height: 2.4rem;
+  p,
+  span {
+    color: rgba(var(--text-color), 1);
+    font-size: 1.6rem;
+    font-family: var(--lato);
+    line-height: 2.4rem;
+  }
 }
 
 .section-title {

@@ -245,6 +245,9 @@ function aum_theme_scripts()
             case 'page-templates/template-about.php':
                 wp_enqueue_style('aum-theme-template-about', get_template_directory_uri() . '/build/css/templates/template-about.css');
                 break;
+            case 'page-templates/template-locations.php':
+                wp_enqueue_style('aum-theme-template-locations', get_template_directory_uri() . '/build/css/templates/template-locations.css');
+                break;
         }
     }
 
@@ -305,4 +308,3 @@ function aum_theme_widget_zones()
 }
 
 add_action('widgets_init', 'aum_theme_widget_zones');
-
