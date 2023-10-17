@@ -306,3 +306,5 @@ function aum_theme_widget_zones()
 
 add_action('widgets_init', 'aum_theme_widget_zones');
 
+//Post Type
+require get_template_directory_uri() . '/includes/post-type-maestros.php';
