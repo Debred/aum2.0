@@ -44,12 +44,8 @@ get_header();
         </div>
 
         <div class="cont-order__third">
-            <p>caja naranja</p>
-            <p>caja naranja</p>
-            <p>caja naranja</p>
-            <p>caja naranja</p>
+            <!---Aqui va el sidebar del Valverde-->
         </div>
-
     </div>
 
 </div>
