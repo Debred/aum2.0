@@ -1,0 +1,1 @@
+{"version":3,"sources":["templates/single.scss","templates/single.css"],"names":[],"mappings":"AAGA,MACI,wBCFJ","file":"single.css","sourcesContent":["@import \"../breakpoints\";\n\n\n.bg-v{\n    background-color: blueviolet;\n}",".bg-v {\n  background-color: blueviolet;\n}"]}

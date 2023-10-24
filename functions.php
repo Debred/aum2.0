@@ -229,14 +229,20 @@ function aum_theme_scripts()
     // Main JS scripts.
     wp_enqueue_script('swiperjs', get_template_directory_uri() . '/build/js/imports/swiper.js', array(), '10.2.0', true);
     wp_enqueue_script('aum-theme-main-scripts', get_template_directory_uri() . '/build/js/scripts.js', array('swiperjs'), '1.0', true);
+    
+    //Main styles
+    if (!is_front_page()) wp_enqueue_style('aum-theme-template-default', get_template_directory_uri() . '/build/css/templates/template-default.css', array(), '1.0');
 
     // Load specific template stylesheet
     if (is_front_page()) {
         wp_enqueue_style('aum-theme-front-page', get_template_directory_uri() . "/build/css/templates/frontpage.css", array(), '1.0');
     }
+    
+    if(is_single()){
+        wp_enqueue_style('aum-theme-single', get_template_directory_uri() . "/build/css/templates/single.css", array(), '1.0');
+    }
 
     if (is_page()) {
-        if (!is_front_page()) wp_enqueue_style('aum-theme-template-default', get_template_directory_uri() . '/build/css/templates/template-default.css', array(), '1.0');
 
         switch (get_page_template_slug()) {
             case 'page-templates/template-about.php':
