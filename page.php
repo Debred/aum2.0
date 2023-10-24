@@ -1,7 +1,4 @@
 <?php
-/*Template Name: Template About*/
-?>
-<?php
 if (!defined('ABSPATH')) {
     exit;
 }
@@ -14,6 +11,7 @@ get_header();
     <div class="cont-order">
         <div class="cont-order__first">
             <h2 class="titleblue">
+                Samlpe
                 Curabitur blandit tempus porttitor.
                 Nullam quis risus eget urna mollis ornare vel eu leo.
                 Nullam id dolor id nibh ultricies vehicula ut id elit.
@@ -40,7 +38,7 @@ get_header();
         </div>
 
         <div class="cont-order__second">
-            <?php get_template_part('template-parts/slide')  ?>
+            <!---Aqui va el sidebar del Valverde-->
         </div>
 
         <div class="cont-order__third">
@@ -49,5 +47,6 @@ get_header();
     </div>
 
 </section>
+
 
 <?php get_footer() ?>
