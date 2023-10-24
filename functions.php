@@ -7,7 +7,7 @@ if (!function_exists('aum_theme_setup')) {
         add_theme_support('title-tag');
 
         //Enable featured images
-        add_theme_support('post-thumbnails', array('post', 'page'));
+        add_theme_support('post-thumbnails', array('post', 'page', 'maestros'));
 
         //Add custom sized images
         add_image_size('square', 350, 350, true);
@@ -234,37 +234,27 @@ function aum_theme_scripts()
     if (is_front_page()) {
         wp_enqueue_style('aum-theme-front-page', get_template_directory_uri() . "/build/css/templates/frontpage.css", array(), '1.0');
     }
-    if (is_home()) {
-        wp_enqueue_style('aum-theme-home', get_template_directory_uri() . "/build/css/templates/home.css", array(), '1.0');
-    }
 
     if (is_page()) {
-        if (!is_front_page()) wp_enqueue_style('aum-theme-template-default', get_template_directory_uri() . '/build/css/templates/template-default.css', array(), '1.1');
+        if (!is_front_page()) wp_enqueue_style('aum-theme-template-default', get_template_directory_uri() . '/build/css/templates/template-default.css', array(), '1.0');
 
         switch (get_page_template_slug()) {
             case 'page-templates/template-about.php':
-                wp_enqueue_style('aum-theme-template-about', get_template_directory_uri() . '/build/css/templates/template-about.css');
+                wp_enqueue_style('aum-theme-template-about', get_template_directory_uri() . '/build/css/templates/template-about.css', array(), '1.0', 'all');
                 break;
             case 'page-templates/template-locations.php':
-                wp_enqueue_style('aum-theme-template-locations', get_template_directory_uri() . '/build/css/templates/template-locations.css');
+                wp_enqueue_style('aum-theme-template-locations', get_template_directory_uri() . '/build/css/templates/template-locations.css', array(), '1.0', 'all');
                 break;
         }
     }
 
-    /*  if (is_home() || is_archive() || is_single()) {
-        wp_enqueue_style('aum-theme-template-default', get_template_directory_uri() . '/assets/scss/page-templates/template-default.css');
-        wp_enqueue_style('aum-theme-page-blog-posts-stylesheet', get_template_directory_uri() . '/assets/scss/page-templates/template-blog-posts.css');
+    if (is_home() || is_archive() || is_single()) {
+        wp_enqueue_style('aum-theme-home', get_template_directory_uri() . "/build/css/templates/home.css", array(), '1.0');
+    }
 
-        if (is_singular('videos')) {
-            wp_enqueue_style('aum-theme-template-videos', get_template_directory_uri() . '/assets/scss/page-templates/template-videos.css', array('slick-theme-min', 'slick-min'));
-        }
-        if (is_post_type_archive('videos') || is_tax('video_categories')) {
-            wp_enqueue_style('aum-theme-template-videos', get_template_directory_uri() . '/assets/scss/page-templates/template-archive-videos.css', array());
-        }
-        if (is_post_type_archive('reports') || is_tax('report_categories')) {
-            wp_enqueue_style('aum-theme-template-reports', get_template_directory_uri() . '/assets/scss/page-templates/template-archive-reports.css', array('slick-theme-min', 'slick-min'));
-        }
-    } */
+    if (is_singular('maestros')) {
+        wp_enqueue_style('aum-theme-template-maestro', get_template_directory_uri() . '/build/css/templates/template-maestro.css', array(), '1.0', 'all');
+    }
 }
 add_action('wp_enqueue_scripts', 'aum_theme_scripts');
 

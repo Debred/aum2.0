@@ -1,10 +1,8 @@
 @import "../breakpoints";
 @import "../template-parts/articles";
-@import "../template-parts/cover";
 
 .blog {
   &__wrapper {
-    padding: 8rem 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

@@ -10,7 +10,7 @@ get_header();
 
 <?php get_template_part('template-parts/cover') ?>
 
-<section class="container cont-page-about">
+<div class="container page cont-page-about">
     <div class="cont-order">
         <div class="cont-order__first">
             <h2 class="titleblue">
