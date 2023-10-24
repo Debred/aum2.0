@@ -10,7 +10,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 
 <?php get_template_part('./template-parts/cover') ?>
 
-<div class="container page maestro">
+<div class="container page with-sidebar maestro">
 
     <div class="heading">
         <h2 class="title"><?= get_field('titulo') ?></h2>

@@ -9,7 +9,7 @@ get_header();
 ?>
 
 
-<div class="container page locations-container">
+<div class="container page with-sidebar locations-container">
     <main class="bg-v">
         hola articulo unico
     </main>

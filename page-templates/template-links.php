@@ -9,7 +9,7 @@ get_header();
 ?>
 
 <?php get_template_part('template-parts/cover') ?>
-<div class="container page locations-container">
+<div class="container page with-sidebar locations-container">
     <main class="bg-vi">
         hola links
     </main>

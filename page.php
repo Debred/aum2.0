@@ -7,7 +7,7 @@ get_header();
 
 <?php get_template_part('template-parts/cover') ?>
 
-<div class="container page cont-page-about">
+<div class="container page with-sidebar cont-page-about">
     <main class="cont-order">
         <div class="cont-order__first">
             <h2 class="titleblue">

@@ -7,7 +7,7 @@ get_header();
 
 <?php get_template_part('template-parts/cover') ?>
 
-<div class="container page blog__wrapper">
+<div class="container page with-sidebar blog__wrapper">
 
     <main class="articles">
         <div class="articles__loop">

@@ -10,7 +10,7 @@ get_header();
 
 <?php get_template_part('template-parts/cover') ?>
 
-<div class="container page cont-page-about">
+<div class="container page with-sidebar cont-page-about">
     <div class="cont-order">
         <div class="cont-order__first">
             <h2 class="titleblue">
@@ -48,6 +48,6 @@ get_header();
         </div>
     </div>
 
-</section>
+    </section>
 
-<?php get_footer() ?>
+    <?php get_footer() ?>
