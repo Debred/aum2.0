@@ -179,11 +179,35 @@ img {
   }
 }
 
+.container {
+  padding: 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (min-width: $ldpi) {
+    padding: 8rem 0;
+  }
+
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 65% 30%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: start;
+    justify-items: center;
+  }
+}
+
+
 .formatted-text {
   font-size: 1.6rem;
   font-family: var(--lato);
   color: rgba(var(--text-color), 1);
   line-height: 2.4rem;
+
   p,
   span,
   li {
@@ -241,6 +265,7 @@ img {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+
     &::after {
       content: "\2192";
       margin-left: 1rem;
@@ -260,6 +285,7 @@ img {
 //Sidebars
 .sidebar {
   width: 100%;
+
   .widget {
     width: 100%;
     margin: 4rem 0;
@@ -280,6 +306,7 @@ img {
       width: 100%;
       display: flex;
       flex-direction: column;
+
       ul {
         width: 100%;
         display: flex;
@@ -289,6 +316,7 @@ img {
         gap: 2.5rem;
         list-style: disc;
         list-style-position: inside;
+
         li {
           width: 100%;
           text-align: left;

@@ -7,8 +7,8 @@ get_header();
 
 <?php get_template_part('template-parts/cover') ?>
 
-<section class="container cont-page-about">
-    <div class="cont-order">
+<div class="container page cont-page-about">
+    <main class="cont-order">
         <div class="cont-order__first">
             <h2 class="titleblue">
                 Samlpe
@@ -37,16 +37,9 @@ get_header();
 
         </div>
 
-        <div class="cont-order__second">
-            <!---Aqui va el sidebar del Valverde-->
-        </div>
-
-        <div class="cont-order__third">
-            <!---Aqui va el sidebar del Valverde-->
-        </div>
-    </div>
-
-</section>
+    </main>
+    <?php get_sidebar(); ?>
+</div>
 
 
 <?php get_footer() ?>

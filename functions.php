@@ -245,6 +245,9 @@ function aum_theme_scripts()
             case 'page-templates/template-locations.php':
                 wp_enqueue_style('aum-theme-template-locations', get_template_directory_uri() . '/build/css/templates/template-locations.css', array(), '1.0', 'all');
                 break;
+            case 'page-templates/template-links.php':
+                wp_enqueue_style('aum-theme-template-links', get_template_directory_uri() . '/build/css/templates/template-links.css', array(), '1.0', 'all');
+                break;
         }
     }
 
