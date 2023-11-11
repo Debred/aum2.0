@@ -1,25 +1,24 @@
 @import "../breakpoints";
 
-.page-template-template-links {
-    .container {
-        padding: 2.5rem 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+.main-links {
+    .parr-title {
+        // background-color: red;
+    }
+}
 
-        @media (min-width: $ldpi) {
-            padding: 8rem 0;
+
+@media  (min-width: $ldpi) {
+    .main-links {
+        .parr-title {
+            font-size: 2rem;
         }
-
-
-        @media (min-width: $tablet) {
+        .cont-links{
             display: grid;
-            grid-template-columns: 65% 30%;
-            justify-content: space-between;
-            align-content: center;
-            align-items: start;
-            justify-items: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            &-sons{
+                padding: 10px;
+            }
         }
     }
+    
 }

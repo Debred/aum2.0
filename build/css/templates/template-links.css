@@ -1,2 +1,2 @@
-.page-template-template-links .container{align-items:center;display:flex;flex-direction:column;justify-content:space-around;padding:2.5rem 0}@media (min-width:1024px){.page-template-template-links .container{padding:8rem 0}}@media (min-width:768px){.page-template-template-links .container{align-content:center;align-items:start;display:grid;grid-template-columns:65% 30%;justify-content:space-between;justify-items:center}}
+@media (min-width:1024px){.main-links .parr-title{font-size:2rem}.main-links .cont-links{display:grid;grid-template-columns:1fr 1fr 1fr}.main-links .cont-links-sons{padding:10px}}
 /*# sourceMappingURL=template-links.css.map */
